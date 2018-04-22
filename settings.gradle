@@ -1,0 +1,16 @@
+rootProject.name = 'bugs'
+
+include ':externalInterface'
+project(':externalInterface').projectDir = "$rootDir/externalInterface" as File
+
+include ':compareBy.common'
+project(':compareBy.common').projectDir = "$rootDir/compareBy/common" as File
+
+include ':compareBy.jvm'
+project(':compareBy.jvm').projectDir = "$rootDir/compareBy/jvm" as File
+
+include ':multiplatformType.common'
+project(':multiplatformType.common').projectDir = "$rootDir/multiplatformType/common" as File
+
+include ':multiplatformType.jvm'
+project(':multiplatformType.jvm').projectDir = "$rootDir/multiplatformType/jvm" as File
